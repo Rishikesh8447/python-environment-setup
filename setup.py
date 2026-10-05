@@ -87,6 +87,7 @@ def main():
         create_directories(project_dir)
         create_requirements_file(project_dir)
         create_gitignore(project_dir)
+        print(f"{GREEN}✓ Project setup completed successfully!{RESET}")
 
     except OSError as error:
         print(f"{RED}✗ Setup failed: {error}{RESET}")
